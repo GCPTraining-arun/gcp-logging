@@ -17,4 +17,14 @@ public class DemoLogController {
         logger.error("ERROR log from Spring Boot");
         return "GCP logging demo";
     }
+
+
+    @GetMapping("/user")
+    public String log() {
+
+        logger.info("User service ");
+
+        return "User service";
+    }
+
 }
